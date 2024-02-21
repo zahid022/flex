@@ -1,0 +1,176 @@
+.container {
+    background: url('../img/bg.avif') center/cover;
+    height: 100vh;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.444);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 3vw;
+}
+
+nav ul li a {
+    color: black;
+    transition: .3s;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    background-color: purple;
+}
+
+nav ul li i {
+    padding: 10px;
+    display: inline-block;
+    background-color: purple;
+    border-radius: 50%;
+    margin-top: -10px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+nav ul li i:hover {
+    rotate: 360deg;
+}
+
+#logo img {
+    width: 120px;
+}
+
+#title {
+    text-align: center;
+    color: #fff;
+    margin: auto;
+}
+
+#title h1 {
+    margin-bottom: 20px;
+}
+
+#title button {
+    padding: 20px 30px;
+    border: 1px solid purple;
+    border-radius: 10px;
+    margin: 30px 10px;
+    cursor: pointer;
+}
+
+.btn-1 {
+    background-color: transparent;
+    color: red;
+    transition: .3s;
+}
+
+.btn-1:hover {
+    background-color: purple;
+    color: #fff;
+}
+
+.btn-2 {
+    background-color: purple;
+    color: #fff;
+    transition: .3s;
+}
+
+.btn-2:hover {
+    background-color: transparent;
+    color: red;
+}
+
+main {
+    background: rgb(94, 8, 255);
+    background: linear-gradient(125deg, rgba(94, 8, 255, 0.9332983193277311) 13%, rgba(201, 12, 188, 1) 48%, rgba(166, 12, 33, 1) 100%);
+    height: 100vh;
+    padding: 50px 30px;
+}
+.row{
+    display: flex;
+    justify-content: space-evenly;
+}
+.col{
+    flex: 0 1 25%;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 15px black;
+    transition: .3s;
+}
+.col:hover{
+    scale: 1.1;
+}
+.col h2{
+    margin-bottom: 20px;
+}
+.col p{
+    margin-bottom: 20px;
+}
+.col button{
+    padding: 10px 30px;
+    border: 3px solid blue;
+    border-radius: 5px;
+    background-color: transparent;
+    color: red;
+    cursor: pointer;
+    transition: .3s;
+}
+.col button:hover{
+    
+    background-color: blue;
+    color: #fff;
+}
+.img img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+.cnt{
+    padding: 20px 30px;
+}
+@media only screen and (max-width: 768px) {
+    nav {
+        display: block;
+        text-align: center;
+    }
+
+    nav ul {
+        display: block;
+    }
+
+    nav ul li {
+        margin: 20px;
+    }
+
+    nav ul li i {
+        margin: 10px;
+    }
+    .container,
+    header {
+        height: auto;
+    }
+    .row{
+        display: initial;
+    }
+    .col{
+        margin-bottom: 30px;
+    }
+    main{
+        height: auto;
+    }
+}
